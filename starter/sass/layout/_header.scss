@@ -17,9 +17,9 @@
     }
 
     //Image responsive en CSS selon la densité et la taille de l'écran
-    @media (min-resolution: 192dpi) and (min-width: 37.5em), //media queries toujours en em
-           (-webkit-min-device-pixel-ratio:2) and (min-width: 37.5em), //min-resolution ne fonctionne pas sur safari alors utilisation du ratio 
-           (min-width: 125em) { //192 valeur par défaut écran rétina apple
+    @media only screen and  (min-resolution: 192dpi) and (min-width: 37.5em), //media queries toujours en em
+           only screen and (-webkit-min-device-pixel-ratio:2) and (min-width: 37.5em), //min-resolution ne fonctionne pas sur safari alors utilisation du ratio 
+           only screen and (min-width: 125em) { //192 valeur par défaut écran rétina apple
         background-image: linear-gradient(
             to right bottom,
             rgba($color-primary-light, 0.8), 
